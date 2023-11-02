@@ -1,6 +1,6 @@
 
 # Live Link 
-## [Notes App] (https://pocket-notes-app.netlify.app/)
+### (https://pocket-notes-app.netlify.app/)
 
 # Getting Started with Create React App
 
