@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+body {
+  background-color: #f7ebdad1;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.box {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.notegroup {
+  width: 25vw;
+  height: 100vh;
+  background-color: white;
+}
+.notes {
+  width: 75vw;
+  height: 100vh;
+  background-color: #f8ead5;
+}
+
+
+
+@media (min-width: 100px) and (max-width: 700px) {
+  body {
+    overflow-y: hidden;
+  }
+  .notes {
+    overflow: hidden;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .notegroup {
+    height: 900px;
+  }
+}

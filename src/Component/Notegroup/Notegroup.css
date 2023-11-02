@@ -1,0 +1,159 @@
+.pocket-txt {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.pocket-btn {
+  margin-top: 20px;
+  margin-left: 5%;
+  background-color: #000000;
+  padding: 9px 4vw;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 17px;
+  border-radius: 15px;
+  border: none;
+  z-index: 1;
+}
+pre {
+  font-family: sans-serif;
+}
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.popup {
+  width: 450px;
+  height: 230px;
+  position: absolute;
+  padding-left: 50px;
+  padding-top: 13px;
+  background-color: #ffffff;
+  color: #000000;
+  left: 28%;
+  top: 25%;
+  z-index: 1;
+}
+.pop-p {
+  margin-bottom: 8px;
+}
+.color-options {
+  margin-right: 14px;
+  display: flex;
+  gap: 1px;
+}
+.pop-input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+.pop-btn {
+  position: relative;
+  left: 260px;
+  bottom: 6px;
+  font-size: 17px;
+  padding: 7px 15px;
+  background-color: black;
+  border: none;
+  color: white;
+}
+.grp-btn {
+  color: #000000;
+  border: none;
+  background-color: #ffffff;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.group-wrapper {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 100%;
+  gap: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.group-wrapper:hover {
+  background-color: #f8ead5;
+}
+.grp-name {
+  font-size: 17px;
+  margin-top: 5px;
+  flex-basis: 80%;
+}
+
+.group-dp {
+  max-width: 46px;
+  min-width: 45px;
+  height: 47px;
+  border-radius: 50%;
+  flex-basis: 20%;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 7px;
+  position: relative;
+  z-index: 1;
+  margin-left: 29px;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.grp-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.grp-btn:hover {
+  color: #555;
+}
+.group-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+  .popup {
+    width: 300px;
+    height: 180px;
+    left: 6%;
+    top: 28%;
+    font-size: 11px;
+    padding-left: 10px;
+    z-index: 2;
+  }
+  .pop-input {
+    width: 130px;
+    font-size: 10px;
+  }
+
+  .pop-btn {
+    z-index: 1;
+    left: 160px;
+    bottom: 8px;
+    font-size: 12px;
+  }
+  .pocket-notes {
+    height: 100vh;
+  }
+}
