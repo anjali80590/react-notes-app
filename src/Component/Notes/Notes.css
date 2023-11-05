@@ -3,6 +3,7 @@
   margin-left: 30%;
   margin-top: 150px;
   z-index: 2;
+  overflow: hidden;
 }
 .note-bg img {
   width: 40%;
@@ -35,6 +36,7 @@ footer {
   bottom: 60px;
 }
 .notes-input {
+  /* width: 75vw; */
   width: 100%;
   height: 160px;
   border: 20px solid #2222;
@@ -43,6 +45,7 @@ footer {
   border-radius: 10px;
   padding-left: 20px;
   padding-top: 20px;
+  overflow: auto;
 }
 
 .comp-notes {
@@ -57,10 +60,11 @@ footer {
   background-color: transparent;
 }
 .comp-notes {
+  width: 74%;
   position: absolute;
   top: 80px;
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: auto;
   margin-left: 20px;
 }
 .notes-sec {
@@ -68,13 +72,13 @@ footer {
   z-index: 2;
   font-size: 14px;
   display: flex;
+  width: 80%;
   gap: 10px;
   margin-top: 10px;
-  width: 100%;
 }
 
 .note-write {
-  flex-basis: 75%;
+  flex-basis: 75vw;
 }
 
 .group-notes-dp {
