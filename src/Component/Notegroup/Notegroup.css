@@ -34,10 +34,11 @@ pre {
   padding-top: 13px;
   background-color: #ffffff;
   color: #000000;
-  left: 28%;
+  left: 90%;
   top: 25%;
   z-index: 1;
 }
+
 .pop-p {
   margin-bottom: 8px;
 }
@@ -74,22 +75,53 @@ pre {
   display: flex;
 }
 
-.group-wrapper {
-  display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
+.popup {
+  width: 450px;
+  height: 230px;
+  position: absolute;
+  padding-left: 50px;
+  padding-top: 13px;
+  background-color: #ffffff;
+  color: #000000;
+  left: 30%;
+  top: 25%;
+  z-index: 1000; /* Ensure the popup is above the overlay */
+  filter: none; /* Reset the filter for the popup to remove blur */
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  gap: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.group-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  cursor: pointer;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .group-wrapper:hover {
-  background-color: #f8ead5;
+  background: #f8ead5;
 }
+
 .grp-name {
   font-size: 17px;
   margin-top: 5px;
   flex-basis: 80%;
+  position: relative;
 }
 
 .group-dp {
@@ -123,13 +155,6 @@ pre {
 
 .grp-btn:hover {
   color: #555;
-}
-.group-wrapper {
-  width: 100%;
-  margin-top: 20px;
-  cursor: pointer;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
 }
 
 @media (min-width: 100px) and (max-width: 700px) {

@@ -2,6 +2,7 @@
   width: 50%;
   margin-left: 30%;
   margin-top: 150px;
+  z-index: 2;
 }
 .note-bg img {
   width: 40%;
@@ -80,11 +81,6 @@ footer {
   width: 53px;
 }
 
-
-
-
-
-
 @media (min-width: 100px) and (max-width: 700px) {
   .grp-txt {
     position: relative;
@@ -144,4 +140,3 @@ footer {
     margin-left: 54px;
   }
 }
-

@@ -35,56 +35,59 @@ function Notegroup({
   }, []);
 
   return (
-    <div className={`pocket-notes ${isCreating ? "light-background" : ""}`}>
+    <div className={`pocket-notes ${isCreating ? "blur-background" : ""}`}>
       <h2 className="pocket-txt">Pocket Notes</h2>
       <button className="pocket-btn" onClick={() => setIsCreating(true)}>
         <pre>+ Create Notes Group</pre>
       </button>
       {isCreating && (
-        <div
-          className={`popup ${isCreating ? "light-background" : ""}`}
-          ref={popupRef}
-        >
-          <h2>Create New Notes Group</h2> <br />
-          <div className="flex">
-            <label>Group Name</label>
-            <input
-              className="pop-input"
-              type="text"
-              placeholder="Enter your group name"
-              value={groupName}
-              onChange={(e) => setGroupName(e.target.value)}
-            />
-          </div>
-          <br />
-          <div className="color-options">
-            <label>Choose Color </label>
-            <div className="color-palette">
-              {[
-                "#B38BFA",
-                "#FF79F2",
-                "#43E6FC",
-                "#F19576",
-                "#0047FF",
-                "#6691FF",
-              ].map((color) => (
-                <div
-                  key={color}
-                  className={`color-circle ${color}`}
-                  style={{
-                    backgroundColor: color,
-                    border:
-                      selectedColor === color ? "2px solid white" : "none",
-                  }}
-                  onClick={() => setSelectedColor(color)}
-                ></div>
-              ))}
+        <div className="container">
+          <div
+            className={`popup ${isCreating ? "light-background" : ""}`}
+            ref={popupRef}
+          >
+            <h2>Create New Notes Group</h2>
+            <br />
+            <div className="flex">
+              <label>Group Name</label>
+              <input
+                className="pop-input"
+                type="text"
+                placeholder="Enter your group name"
+                value={groupName}
+                onChange={(e) => setGroupName(e.target.value)}
+              />
             </div>
+            <br />
+            <div className="color-options">
+              <label>Choose Color </label>
+              <div className="color-palette">
+                {[
+                  "#B38BFA",
+                  "#FF79F2",
+                  "#43E6FC",
+                  "#F19576",
+                  "#0047FF",
+                  "#6691FF",
+                ].map((color) => (
+                  <div
+                    key={color}
+                    className={`color-circle ${color}`}
+                    style={{
+                      backgroundColor: color,
+                      border:
+                        selectedColor === color ? "2px solid white" : "none",
+                    }}
+                    onClick={() => setSelectedColor(color)}
+                  ></div>
+                ))}
+              </div>
+            </div>
+            <br />
+            <button className="pop-btn" onClick={handleCreateGroup}>
+              Create
+            </button>
           </div>
-          <br />
-          <button className="pop-btn" onClick={handleCreateGroup}>
-            Create
-          </button>
         </div>
       )}
       {groups.map((group, index) => (
